@@ -1,0 +1,33 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.emoji-box {
+    border: 2px solid #000; /* Add a 2px solid black border */
+    padding: 10px; /* Add some padding around the emoji */
+    margin: 5px; /* Add some margin between the emojis */
+    display: inline-block; /* Display the emojis as inline-block elements */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the emojis */
+}
+.emoji-box:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+code {
+    font-size: 1.2rem;
+    color: #666;
+}
